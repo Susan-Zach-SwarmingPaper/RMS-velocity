@@ -18,7 +18,7 @@ minTrackLength = 8;
 
 % list of conditions
 ConditionList = [1 2 3 4 5 6 19 20 21 22 23 24 49 50 51 52 53 54 67 68 69 70 71 72];
-%ConditionList = [19];
+
 NumConditions = length(ConditionList);
 
 StoreD = zeros(4,NumConditions);
@@ -73,13 +73,6 @@ FileNameOut = strcat('vel-',prefix,num2str(Condition),'.mat');
        
 end
 
-
-% pointsize= 50;
-% for i =1:10:60
-% figure;
-% scatter(storeXh(:,i),storeYh(:,i),pointsize,velR(:,i),'filled'),;
-% colorbar;
-% end
 
 %
 % plot(Time,quartiles(1,:),'Color',[229/256 229/256 229/256],'Linewidth',1);
